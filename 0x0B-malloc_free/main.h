@@ -2,6 +2,7 @@
 #define FILE_MAIN
 #include <stdio.h>
 #include <stdlib.h>
+int _putchar(char c);
 char *_strdup(char *str);
 char **strtow(char *str);
 char *argstostr(int ac, char **av);
