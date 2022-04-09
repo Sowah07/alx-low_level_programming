@@ -18,14 +18,13 @@ void _print(char *str, int l)
 		if (str[i] != '0')
 			j = 1;
 		if (j || i == l - 1)
-			_putchar(str[i]);
+			_purchar(str[i]);
 		i++;
 	}
 
-	_putchar('\n');
+	_purchar('\n');
 	free(str);
 }
-
 /**
  * mul - multiplies a char with a string and places the answer into dest
  * @n: char to multiply
@@ -115,7 +114,7 @@ int main(int argc, char *argv[])
 	if (argc != 3 || check_for_digits(argv))
 	{
 		for (ti = 0; e[ti]; ti++)
-			_putchar(e[ti]);
+			_purchar(e[ti]);
 		exit(98);
 	}
 	for (l1 = 0; argv[1][l1]; l1++)
@@ -127,7 +126,7 @@ int main(int argc, char *argv[])
 	if (a == NULL)
 	{
 		for (ti = 0; e[ti]; ti++)
-			_putchar(e[ti]);
+			_purchar(e[ti]);
 		exit(98);
 	}
 	init(a, ln - 1);
@@ -137,7 +136,7 @@ int main(int argc, char *argv[])
 		if (t == NULL)
 		{
 			for (ti = 0; e[ti]; ti++)
-				_putchar(e[ti]);
+				_purchar(e[ti]);
 			free(a);
 			exit(98);
 		}
