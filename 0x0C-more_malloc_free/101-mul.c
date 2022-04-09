@@ -25,6 +25,7 @@ void _print(char *str, int l)
 	_putchar('\n');
 	free(str);
 }
+
 /**
  * mul - multiplies a char with a string and places the answer into dest
  * @n: char to multiply
