@@ -12,7 +12,6 @@ void print_c(va_list c)
 {
 	printf("%c", va_arg(c, int));
 }
-
 /**
  * print_s - prints a string
  * @s: string to print
@@ -27,7 +26,6 @@ void print_s(va_list s)
 		str = "(nil)";
 	printf("%s", str);
 }
-
 /**
  * print_i - prints an int
  * @i: int to print
@@ -38,7 +36,6 @@ void print_i(va_list i)
 {
 	printf("%d", va_arg(i, int));
 }
-
 /**
  * print_f - prints a float
  * @f: float to print
